@@ -1,0 +1,28 @@
+Variables: una variable es una parte de la memoria que reservamos para guardar o almacenar
+un dato, puede ser una cadena de caracteres, un numero o logica (con valores true o false).
+
+Las variables se pueden declarar como var, se puede manipular su contenido (cambiarlo) o 
+como const, donde su contenido es constante y no puede cambiarse.
+
+Strings: este es un tipo de dato que puede almacenarse dentro de una variable, puede ser
+un caracter o cadena de caracteres.
+
+Funciones (argumentos, return): una funcion, es un bloque de codigo que podemos llamar, el
+nombre se lo damos en la declaracion de la funcion, para mas practicidad le damos un nombre
+que guarde relacion con lo que hace la misma.
+Se utiliza para no tener que estar repitiendo el codigo, cada vez que queremos realizar esa
+accion especifica, para la que ya escribimos el codigo, llamamos a la funcion para realizarla.
+Se les pueden pasar argumentos, uno o varios, pueden ser variables, numeros, strings, etc., se 
+los declara cuando declaramos la funcion, de esta manera podemos pasarles datos a las mismas 
+y ellas nos pueden devolver datos mediante la palabra reservada 'return', sin 'return', los
+datos no pueden escapar de las funciones.
+
+Declaracion if: esta es muy importante, ya que nos permite manejar el flujo del codigo mediante
+condiciones, si esta dada esta condicion, se ejecuta una parte del codigo, sino, se ejecuta otra
+seccion de codigo.
+
+Valores booleanos (true , false): este tipo de valores solo puede tener esos dos estados, verdadero 
+o falso, pueden utilizarse para constatar si esta dada una condicion especifica, si un dato es correcto
+o no, si esta dentro de valores especificados, entre otros usos.
+
+
