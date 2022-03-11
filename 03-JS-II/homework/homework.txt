@@ -1,0 +1,12 @@
+For: for nos permite ejecutar un bloque de codigo mientras estan dadas las condiciones establecidas en
+los argumentos, declaracion o condicion inicial (inicio de la ejecucion), condicon final (hasta cuando 
+se debe ejecutar), y por ultimo el incremento del contador.
+
+Operadores &&, || y !.
+
+&&: este operador (AND), nos sirve para poder evaluar varias condiciones a la vez, y se tienen que dar
+todas para que sea verdadera.
+||: este operador (OR), al igual que &&, nos permite evaluar varias condiciones a la vez, pero a 
+diferencia de &&, con solamente una de las condiciones este dada, es verdadera.
+!: este operador (NOT), invierte lo verdadero en falso y vice versa, devuelve false si una condicion es
+verdadera y true si la condicion es falsa.
