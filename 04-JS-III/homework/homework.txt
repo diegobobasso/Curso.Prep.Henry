@@ -1,0 +1,4 @@
+Arrays:
+
+Podemos decir que los arrays son un conjunto de datos agrupados, a los cuales podemos acceder mediante
+un indice a cualquiera de estos. En JS, los arrays pueden contener datos de distintos tipos agrupados.
