@@ -247,7 +247,7 @@ function empiezaConNueve(n) {
 
   var numero = n.toString() ;
 
-  if ( '9' === numero.charAt(0)) {
+  if ( '9' === numero[0]) {
     return true ;
   }
 
