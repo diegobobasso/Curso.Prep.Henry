@@ -1,0 +1,20 @@
+Objetos: podemos decir que los objetos son contenedores de datos que son parte y hacen referencia a la 
+misma cosa, el objeto. 
+Un objeto puede contener propiedades, equivalentes a las variables, que pueden ser de todos los tipos de 
+datos, number, string, array, boolean, etc.
+Los objetos tambien pueden contener metodos, que son funciones que pueden ser llamadas invocando al objeto.
+A diferencia de los arrays, a los cuales podemos acceder a los elementos de su interior mediante un indice
+numerico, en los objetos podemos usar un string con el nombre de la propiedad entre corchetes o podemos 
+nombrar el objeto.propiedad para hacer refencia a las mismas.
+La diferencia entre estos dos metodos de notacion, es que para acceder al valor con notacion de punto,
+debemos conocer de antemano el nombre de la propiedad, en tanto, cuando usamos notacion de corchetes, no
+hace falta conocer el nombre de la propiedad, ya que puede ser pasada como argumento de tipo string, y es
+practico para usar en bucles.
+
+Bucle for...in : el bucle for...in nos sirve para poder evaluar e iterar sobre todas las propiedades de un
+ objeto. 
+
+for (var variable in nombreobjeto) {
+    bloque de codigo
+}
+
