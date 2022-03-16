@@ -1,0 +1,6 @@
+Prototype: Cuando creamos un objeto a partir de una clase, el prototype del objeto creado es la clase a 
+partir del cual se creó.
+Podemos usar los metodos de la clase prototype en el nuevo objeto.
+
+Constructors (de clases): Un constructor de clase, crea un objeto a partir una clase, o sea, una copia de 
+la estructura de la clase con otro nombre, el nombre que le demos al objeto que estamos creando.
