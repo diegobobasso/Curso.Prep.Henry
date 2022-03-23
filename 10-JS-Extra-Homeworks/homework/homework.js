@@ -10,6 +10,22 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  
+  
+let propiedades = [];
+let valores = [];
+let devolucion = [];
+propiedades = Object.keys(objeto);
+valores = Object.values(objeto);
+
+for(contador=0;contador<propiedades.length;contador++){
+  devolucion[contador] = [];
+  devolucion[contador][0] = propiedades[contador];
+  devolucion[contador][1] = valores[contador];
+}
+
+return devolucion;
+
 }
 
 
@@ -18,6 +34,28 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+  var devolucion = {} ;
+  var evalua ;
+
+  for(var contador = 0 ; contador < string.length ; contador++) {
+    evalua = string[contador];
+    
+    if(!(devolucion.hasOwnProperty(evalua))) {
+      
+      devolucion[evalua] = 1;
+      
+    } 
+    else {
+      
+      devolucion[evalua] = devolucion[evalua] + 1;
+    
+    }
+    
+  }
+
+  return devolucion;
+
 }
 
 
@@ -26,6 +64,43 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
+  let cadena2 = [];
+  let cadena3 = [];
+  let cadena4 = "";
+  let evalua = "";
+  let evalua2 = "";
+  let cont = 0;
+  let cont2 = 0;
+
+  cadena2 = s.split("");
+  
+  for(cont = 0 ; cont < cadena2.length ; cont++) {
+      evalua = cadena2[cont];
+      evalua2 = evalua.toUpperCase();
+      if(evalua === evalua2) {
+          cadena3[cont2] = cadena2[cont];
+          cont2++;   
+      }
+      
+  }
+  
+  for(cont = 0 ; cont < cadena2.length ; cont++) {
+      evalua = cadena2[cont];
+      evalua2 = evalua.toLowerCase();
+      if(evalua === evalua2) {
+          cadena3[cont2] = cadena2[cont];
+          cont2++;
+      }
+
+  }
+
+  cadena4 = cadena3.join("");
+  
+  return cadena4;
+  
+
+
 }
 
 
@@ -35,6 +110,9 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+
+
+
 } 
 
 
@@ -43,6 +121,20 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+
+
+  var numero2 = numero.toString() ;
+  var numero3 = [];
+  numero3 = numero2.split("");
+  numero3.reverse();
+  numero3 = numero3.join("");
+
+  if(numero2 === numero3) {
+    return 'Es capicua' ;
+  }
+  else {
+    return 'No es capicua' ;
+  }
 }
 
 
@@ -50,6 +142,31 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+
+  let cadena2 = [];
+  let cadena3 = [];
+  let cadena4 = "";
+  let evalua = "";
+  let evalua2 = "";
+  let cont = 0;
+  let cont2 = 0;
+
+  cadena2 = cadena.split("");
+  
+  for(cont = 0 ; cont < cadena2.length ; cont++) {
+      evalua = cadena2[cont];
+      if(evalua !== 'a' && evalua !== 'A' && evalua !== 'b' && evalua !== 'B' && evalua !== 'c' && evalua !== 'C') {
+          cadena3[cont2] = cadena2[cont];
+          cont2++;
+      }
+
+  }
+
+  cadena4 = cadena3.join("");
+
+  return cadena4;
+
+
 }
 
 
