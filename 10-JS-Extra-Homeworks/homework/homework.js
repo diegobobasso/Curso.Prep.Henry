@@ -110,7 +110,42 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  
+  let cadena = [];
+  let cont1 = 0 ;
+  let letra ;
+  let palabra = [] ;
+  let devolucion = "";
 
+    cadena = str.split("");
+    
+    for(cont1 = 0; cont1 < cadena.length ; cont1++) {
+    letra = cadena[cont1] ;
+    
+    if (letra === " " && palabra.length === 0) {
+        devolucion = devolucion + " ";
+    }
+    else if (letra === " " && palabra.length > 0 ) {
+        palabra.reverse() ; 
+        devolucion = devolucion + palabra.join("");
+        if (cont1 < cadena.length - 1) {
+            devolucion = devolucion + " " ;
+        }
+        palabra = [];
+        }
+    else if ( letra !== " " && cont1 === (cadena.length - 1) ) {
+        palabra.push(cadena[cont1]) ;
+        palabra.reverse() ; 
+        devolucion = devolucion + palabra.join("");
+        palabra = [];
+    }
+    else if (letra !== " ") {
+        palabra.push(cadena[cont1]) ;
+        }
+    
+  }
+  
+  return devolucion;
 
 
 } 
@@ -174,6 +209,29 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  
+  let arreglo = arr ;
+  let arreglo2 = [] ;
+  let tamanoArreglo = arreglo.length ;
+  let tamano = 0;
+  let contador ;
+  
+
+  for( tamano = 1 ; tamano  < 256 ; tamano++) {
+      for (contador = 0 ; contador < tamanoArreglo ; contador++) {
+          if(arreglo[contador].length === tamano) {
+              arreglo2.push(arreglo[contador]);
+          }
+
+      } 
+  }
+
+  
+  return arreglo2;
+
+
+
+
 }
 
 
@@ -183,6 +241,25 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+
+
+  let devolucion = [];
+  let cont1 = 0;
+  let cont2 = 0;
+
+  for(cont1 = 0 ; cont1 < arreglo1.length ; cont1++) {        
+      for(cont2 = 0 ; cont2 < arreglo2.length ; cont2++) {
+          if(arreglo1[cont1] === arreglo2[cont2]) {
+          devolucion.push(arreglo1[cont1]);
+          }
+      }
+  }
+  
+
+  return devolucion;
+
+
+
 }
 
 
